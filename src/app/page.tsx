@@ -6,6 +6,7 @@ import WhyTrustUs from "../../components/trust"
 import Foot from "../../components/footer"
 import Steps from "../../components/trip-steps"
 import Link from "next/link"
+import { PlaneTakeoff, Hotel,Backpack,TicketsPlane } from "lucide-react"
 
 export default function Home() {
   return (
@@ -13,12 +14,12 @@ export default function Home() {
       <Navbar/>
 
       {/* Cover image */}
-      <section className="h-screen flex items-center justify-center my-20">
-        <div className="relative w-full max-w-7xl h-[90vh] px-4">
+      <section className="h-screen flex items-center justify-center my-10 md:my-20 font-sans">
+        <div className="relative w-full max-w-4/6 h-[90vh] px-3 md:px-10">
           
           <div className="relative w-full h-full overflow-hidden rounded-md">
             <Image
-              src="/home-cover.png"
+              src="/home-cover.webp"
               alt="Travel background"
               fill
               priority
@@ -28,17 +29,17 @@ export default function Home() {
             <div className="relative z-10 h-full flex items-end"> 
               <div className="w-full px-10 grid md:grid-cols-2 gap-8">
                 
-                <h1 className="text-white text-3xl md:text-6xl font-bold leading-tight mb-7 md:mb-10">
+                <h1 className="text-white text-4xl md:text-7xl font-medium tracking-wide mb-7 md:mb-12">
                   Travel Begins <br />
                   With The Right <br />
                   Journey.
                 </h1>
 
-                <div className="text-white max-w-md ml-auto">
-                  <p className="text-white/90 mb-6">
+                <div className="text-white max-w-lg ml-auto pt-0 md:pt-10">
+                  <span className="text-white/90 text-lg md:text-xl pr-5">
                     From short local escapes to exciting international adventures,
                     we create travel experiences that are smooth, reliable, and memorable.
-                  </p>
+                  </span><br/>
 
                   <Link href="/tours">
                     <button className="bg-white text-black px-6 py-3 my-3 rounded-md font-medium">
@@ -55,34 +56,34 @@ export default function Home() {
       </section>
 
       {/*Services*/}
-      <section className="w-full py-20 mt-10">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="w-full md:content-center md:h-[100vh]"> 
+        <div className="max-w-4/6 mx-auto px-3 md:px-10 py-10">
 
-          <div className="flex flex-col md:flex-row justify-between gap-10 mb-16">
+          <div className="flex items-stretch flex-col md:flex-row justify-between gap-10 mb-16">
             
-            <h2 className="text-4xl md:text-5xl font-bold leading-tight max-w-md text-black">
+            <div className="text-2xl md:text-5xl font-bold w-full md:w-3/6 text-black text-center md:text-left">
               Your Trusted Partner
-              <br />
+              <div className="h-1 md:h-5 bg-transparent"/>
               For Local & Global
-              <br />
+              <div className="h-1 md:h-5 bg-transparent"/>
               Travel
-            </h2>
+            </div>
 
-            <p className="text-gray-600 max-w-md md:text-left">
+            <span className="text-[#909090] self-end w-full md:w-3/6 md:ml-20 md:py-5 text-base md:text-xl text-center md:text-left">
               We provide complete planning and on-ground support for well-organized
               tours across Sri Lanka and overseas destinations, so you can travel
               with confidence.
-            </p>
+            </span>
           </div>
 
           <div className="flex flex-col md:flex-row justify-between gap-10">
 
-            <div className="flex-1">
+            <div className="flex-1 ">
               <span className="text-2xl mb-4">
-                <Image
-                  src="/airplane.png"
-                  width={35}
-                  height={35}                  
+                <Image 
+                  src="/airplane.svg"
+                  width={30}
+                  height={30}
                   alt="Airplane"
                 />
               </span>
@@ -96,10 +97,10 @@ export default function Home() {
 
             <div className="flex-1">
               <span className="text-2xl mb-4">
-                <Image
-                  src="/hotel.png"
-                  width={35}
-                  height={35}
+              <Image 
+                  src="/hotel.svg"
+                  width={30}
+                  height={30}
                   alt="Hotel"
                 />
               </span>
@@ -113,10 +114,10 @@ export default function Home() {
 
             <div className="flex-1">
               <span className="text-2xl mb-4">
-                <Image
-                  src="/suitcases.png"
-                  width={35}
-                  height={35}
+              <Image 
+                  src="/suitcase.svg"
+                  width={30}
+                  height={30}
                   alt="Suitcase"
                 />
               </span>
@@ -130,11 +131,11 @@ export default function Home() {
 
             <div className="flex-1">
               <span className="text-2xl mb-4">
-                <Image
-                  src="/passport.png"
-                  width={35}
-                  height={35}
-                  alt="Passport image"
+              <Image 
+                  src="/passport.svg"
+                  width={30}
+                  height={30}
+                  alt="Passport"
                 />
               </span>
               <h3 className="font-semibold text-black text-lg mb-2">
@@ -158,24 +159,21 @@ export default function Home() {
       <Steps/>
 
       {/* Comments */}
-      <section className="w-full bg-white py-16 ">
-        {/* Heading */}
-        <div className="mx-auto max-w-5xl px-4 text-center">
-          <h2 className="text-3xl font-semibold text-gray-900 md:text-4xl">
+      <section className="w-full bg-white pt-10 pb-10 md:pb-0 md:h-[100%]">
+        <div className="max-w-4/6 mx-auto px-3 md:px-10 text-center">
+          <h2 className="text-2xl md:text-5xl font-semibold text-gray-900">
             Stories From Our Travelers
           </h2>
-          <p className="mt-3 text-sm text-gray-500 md:text-base">
+          <p className="mt-3 text-base text-gray-500 md:text-base">
             Hear from travelers who have trusted us to plan their local and
             international journeys.
           </p>
         </div>
 
-        {/* Image + Card */}
-        <div className="relative mx-auto mt-12 max-w-6xl px-4">
-          {/* Background Image */}
-          <div className="relative h-[90vh] w-full overflow-hi0den rounded-lg ">
+        <div className="relative mt-12 max-w-6/6 px-3 md:px-0 mx-auto">
+          <div className="relative h-[40rem] w-full overflow-hidden md:rounded-none rounded-lg">
             <Image
-              src="/home-cover.png"
+              src="/home-cover.webp"
               alt="Traveler story background"
               fill
               className="object-cover"
@@ -183,16 +181,15 @@ export default function Home() {
             />
           </div>
 
-          {/* Testimonial Card */}
-          <div className="absolute left-1/2 top-1/2 w-[90%] max-w-md -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white p-6 shadow-xl sm:p-8">
-            <p className="text-sm leading-relaxed text-gray-600">
+          <div className="absolute left-1/2 top-1/2 w-[70%] md:w-[50%] max-w-md -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white p-6 shadow-xl sm:p-8">
+            <p className="text-sm md:text-base leading-relaxed text-gray-600">
               Lorem ipsum posuere massa facilisi augue augue aliquam pellentesque
               morbi sed suspendisse pellentesque aliquet eget eu aliquam malesuada
               tortor quis.
             </p>
 
             <div className="mt-6 flex items-center justify-center gap-3">
-              <div className="h-10 w-10 rounded-full bg-gray-400" />
+              <div className="md:h-10 md:w-10 h-7 w-7 rounded-full bg-gray-400" />
               <span className="text-sm font-medium text-gray-800">
                 John Doe
               </span>

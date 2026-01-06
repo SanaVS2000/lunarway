@@ -1,12 +1,13 @@
 import Image from "next/image";
+
 export default function PackageDetails() {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-12">
+    <section className="py-12 bg-white mx-auto w-full max-w-4/6 px-3 md:px-10">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
 
         {/* LEFT CONTENT */}
         <div className="lg:col-span-2">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-2xl font-semibold text-black mb-4">
             Package Overview
           </h2>
 
@@ -78,7 +79,7 @@ export default function PackageDetails() {
 
         {/* RIGHT CARD */}
         <div>
-          <div className="bg-white border border-gray-200 rounded-2xl p-6 sticky top-24">
+          <div className="bg-white border border-gray-200 rounded-2xl p-6 lg:sticky lg:top-24">
             <div className="mb-6">
               <p className="text-sm text-gray-500">Starting at</p>
               <p className="text-3xl font-bold text-gray-900">
@@ -101,11 +102,58 @@ export default function PackageDetails() {
               </h4>
 
               <ul className="space-y-3 text-gray-600">
-                <li> <Image src="/air.png" alt="Airport transfer" width={20} height={20} className="inline mr-2" /> Airport transfers</li>
-                <li><Image src="/hotel.png" alt="Hotel_accommodation" width={20} height={20} className="inline mr-2" /> Hotel accommodation with breakfast</li>
-                <li><Image src="/visa.png" alt="visa assistance" width={20} height={20} className="inline mr-2" /> visa assistance</li>
-                <li><Image src="/local.png" alt="Local transportation" width={20} height={20} className="inline mr-2" /> Local transportation</li>
-                <li><Image src="/tour.png" alt="Tour Coordination & Support" width={20} height={20} className="inline mr-2" /> Tour Coordination & Support</li>
+                <li>
+                  <span className="mr-3">
+                    <Image
+                      src="/airplane.svg"
+                      width={25}
+                      height={25}
+                      alt="Airplane"
+                      className="mx-auto inline-block opacity-40"
+                    />
+                  </span>  
+                  Airport transfers
+                </li>
+                <li><span className="mr-3">
+                    <Image
+                      src="/hotel.svg"
+                      width={25}
+                      height={25}
+                      alt="Airplane"
+                      className="mx-auto inline-block opacity-40"
+                    />
+                  </span>  
+                  Hotel accommodation with breakfast
+                </li>
+                <li>
+                  <span className="mr-3">
+                    <Image
+                      src="/passport.svg"
+                      width={25}
+                      height={25}
+                      alt="Passport"
+                      className="mx-auto inline-block opacity-40"
+                    />
+                  </span>  Visa assistance</li>
+                <li><span className="mr-3">
+                    <Image
+                      src="/bus.svg"
+                      width={25}
+                      height={25}
+                      alt="Bus"
+                      className="mx-auto inline-block"
+                    />
+                  </span>  Local transportation</li>
+                <li>
+                  <span className="mr-3">
+                    <Image
+                      src="/flag.webp"
+                      width={25}
+                      height={25}
+                      alt="Flag"
+                      className="mx-auto inline-block"
+                    />
+                  </span> Tour Coordination & Support</li>
               </ul>
             </div>
           </div>

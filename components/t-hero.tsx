@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="mt-10 max-w-7xl mx-auto px-6 py-12 bg-white">
+    <section className="mt-32 bg-white mx-auto w-full max-w-4/6 min-h-fit lg:h-[90vh] px-3 md:px-10">
 
       {/* FULL WIDTH TITLE + DESCRIPTION ROW */}
       <div className="flex flex-col lg:flex-row items-start justify-between gap-6 mb-8">
@@ -19,7 +19,7 @@ export default function HeroSection() {
         {/* LEFT IMAGE */}
         <div className="rounded-2xl overflow-hidden">
           <Image
-            src="/details-thailand1.png"
+            src="/details-thailand1.webp"
             alt="Bangkok river view"
             width={800}
             height={500}
@@ -34,7 +34,7 @@ export default function HeroSection() {
           {/* Top wide image */}
           <div className="rounded-2xl overflow-hidden">
             <Image
-              src="/details-thailand2.png"
+              src="/details-thailand2.webp"
               alt="Bangkok skyline night"
               width={800}
               height={260}
@@ -46,7 +46,7 @@ export default function HeroSection() {
           <div className="grid grid-cols-2 gap-4">
             <div className="rounded-2xl overflow-hidden">
               <Image
-                src="/details-malasiya3.png"
+                src="/details-malasiya3.webp"
                 alt="Temple architecture"
                 width={400}
                 height={260}
@@ -56,7 +56,7 @@ export default function HeroSection() {
 
             <div className="rounded-2xl overflow-hidden">
               <Image
-                src="/details-malasiya4.png"
+                src="/details-malasiya4.webp"
                 alt="Wat Arun sunset"
                 width={400}
                 height={260}

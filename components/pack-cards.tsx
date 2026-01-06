@@ -20,7 +20,7 @@ interface TourCardProps {
 const TourCard: React.FC<TourCardProps> = ({ tour }) => {
   return (
     <div className="group relative overflow-hidden rounded-2xl bg-white shadow-lg ">
-      <div className="relative h-80 overflow-hidden">
+      <div className="relative h-[27rem] overflow-hidden">
         <img
           src={tour.image}
           alt={tour.imageAlt}
@@ -47,7 +47,7 @@ const TourCard: React.FC<TourCardProps> = ({ tour }) => {
 
             <Link
               href={`/${tour.slug}`}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-lg text-white font-medium hover:bg-white/30 transition-colors duration-200 group/btn"
+              className="inline-flex items-center text-sm md:text-base gap-2 px-2 md:px-4 py-2 bg-white/20 backdrop-blur-sm rounded-lg text-white font-medium hover:bg-white/30 transition-colors duration-200 group/btn"
             >
               Learn More
               <svg
@@ -107,23 +107,21 @@ const tourPackages: TourPackage[] = [
 
 const TourPackages: React.FC = () => {
   return (
-    <section className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+    <section className=" w-full max-w-4/6 mx-auto px-3 md:px-10 py-20 md:h-[100vh]">
+      <div className="items-stretch grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="space-y-6">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-            Explore Our Most Popular Tour Packages
+          <h1 className="text-2xl md:text-5xl font-bold text-black md:leading-[1.2] text-center md:text-left">
+            Explore Our Most <br/> Popular Tour <br/> Packages
           </h1>
         </div>
 
-        <div className="space-y-6">
-          <p className="text-lg text-gray-600 leading-relaxed">
+          <span className="text-[#909090] self-end md:ml-32 text-base md:text-xl text-center md:text-left">
             Explore our carefully planned local and international tour packages,
             designed to offer comfort, value, and memorable travel experiences.
-          </p>
-        </div>
+          </span>
       </div>
 
-      <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 h-auto">
         {tourPackages.map((tour) => (
           <TourCard key={tour.id} tour={tour} />
         ))}

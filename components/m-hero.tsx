@@ -2,13 +2,12 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="mt-10 max-w-7xl mx-auto px-6 py-12 bg-white">
+    <section className="mt-32 bg-white mx-auto w-full max-w-4/6 min-h-fit lg:h-[90vh] px-3 md:px-10">
 
-      {/* FULL WIDTH TITLE + DESCRIPTION ROW */}
       <div className="flex flex-col lg:flex-row items-start justify-between gap-6 mb-8">
         <h1 className="font-bold text-gray-900 leading-none text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Malasiya</h1>
 
-        <p className="text-gray-600 max-w-md leading-relaxed text-left ">
+        <p className="text-gray-600 max-w-md leading-relaxed text-left text-lg">
           Explore carefully curated local and international tour packages designed for every type of traveler.
         </p>
       </div>
@@ -17,9 +16,9 @@ export default function HeroSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
         {/* LEFT IMAGE */}
-        <div className="rounded-2xl overflow-hidden">
+        <div className="rounded-xl overflow-hidden">
           <Image
-            src="/details-malasiya1.png"
+            src="/details-malasiya1.webp"
             alt="Bangkok river view"
             width={800}
             height={500}
@@ -32,9 +31,9 @@ export default function HeroSection() {
         <div className=" space-y-4">
 
           {/* Top wide image */}
-          <div className="rounded-2xl overflow-hidden">
+          <div className="rounded-xl overflow-hidden">
             <Image
-              src="/details-malasiya2.png"
+              src="/details-malasiya2.webp"
               alt="Bangkok skyline night"
               width={800}
               height={260}
@@ -44,9 +43,9 @@ export default function HeroSection() {
 
           {/* Bottom two images */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="rounded-2xl overflow-hidden">
+            <div className="rounded-xl overflow-hidden">
               <Image
-                src="/details-malasiya3.png"
+                src="/details-malasiya3.webp"
                 alt="Temple architecture"
                 width={400}
                 height={260}
@@ -54,9 +53,9 @@ export default function HeroSection() {
               />
             </div>
 
-            <div className="rounded-2xl overflow-hidden">
+            <div className="rounded-xl overflow-hidden">
               <Image
-                src="/details-malasiya4.png"
+                src="/details-malasiya4.webp"
                 alt="Wat Arun sunset"
                 width={400}
                 height={260}

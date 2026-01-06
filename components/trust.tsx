@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function WhyTrustUs() {
   return (
-    <section className="w-full bg-[#1b263b] py-16 mt-10">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="w-full bg-[#1b263b] py-16 mt-28">
+      <div className="max-w-7xl mx-auto px-3 md:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0"> 
           
           {/* LEFT IMAGE */}
           <div className="relative w-full h-[320px] sm:h-[420px] lg:h-[520px]">
             <Image
-              src="/mountain.png" 
+              src="/mountain.webp" 
               alt="Traveler on mountain"
               fill
               className="object-cover"
@@ -18,8 +18,8 @@ export default function WhyTrustUs() {
           </div>
 
           {/* RIGHT CONTENT */}
-          <div className="bg-navyLight px-6 sm:px-10 py-10 flex flex-col justify-center">
-            <h2 className="text-white text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight mb-8">
+          <div className="bg-navyLight px-3 md:px-10 py-10 flex flex-col justify-center">
+            <h2 className="text-white text-2xl lg:text-4xl font-semibold leading-tight mb-8">
               Why Travelers Trust Us
               <br />
               WithTheir Journeys
@@ -45,7 +45,7 @@ function TrustItem() {
     <div className="flex gap-4 py-5">
       <span>
         <Image
-            src={"/airplane.png"}
+            src={"/airplane.svg"}
             width={30}
             height={30}
             alt="plane logo"
