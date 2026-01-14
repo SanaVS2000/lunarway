@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function WhyTrustUs() {
   return (
-    <section className="w-full bg-[#1b263b] py-16 mt-28">
-      <div className="max-w-7xl mx-auto px-3 md:px-10">
+    <section className="w-full bg-[#1b263b] py-20 mt-28">
+      <div className="max-w-7xl mx-auto px-3 md:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0"> 
           
           {/* LEFT IMAGE */}
@@ -18,11 +18,11 @@ export default function WhyTrustUs() {
           </div>
 
           {/* RIGHT CONTENT */}
-          <div className="bg-navyLight px-3 md:px-10 py-10 flex flex-col justify-center">
-            <h2 className="text-white text-2xl lg:text-4xl font-semibold leading-tight mb-8">
+          <div className="bg-navyLight px-3 md:px-16 py-10 flex flex-col justify-center">
+            <h2 className="text-white text-center md:text-left text-2xl lg:text-4xl font-semibold leading-tight mb-8">
               Why Travelers Trust Us
               <br />
-              WithTheir Journeys
+              With Their Journeys
             </h2>
 
             <TrustItem />

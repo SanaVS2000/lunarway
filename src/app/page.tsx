@@ -6,7 +6,6 @@ import WhyTrustUs from "../../components/trust"
 import Foot from "../../components/footer"
 import Steps from "../../components/trip-steps"
 import Link from "next/link"
-import { PlaneTakeoff, Hotel,Backpack,TicketsPlane } from "lucide-react"
 
 export default function Home() {
   return (
@@ -14,8 +13,8 @@ export default function Home() {
       <Navbar/>
 
       {/* Cover image */}
-      <section className="h-screen flex items-center justify-center my-10 md:mt-20 font-sans">
-        <div className="relative w-full max-w-4/6 h-[90vh] px-3 md:px-10">
+      <section className="h-screen flex items-center justify-center mt-10 md:mt-20 font-sans">
+        <div className="relative w-full max-w-4/6 h-[90vh] px-3 md:px-16">
           
           <div className="relative w-full h-full overflow-hidden rounded-md">
             <Image
@@ -27,7 +26,7 @@ export default function Home() {
             />
 
             <div className="relative z-10 h-full flex items-end"> 
-              <div className="w-full px-10 grid md:grid-cols-2 gap-8">
+              <div className="w-full px-16 grid md:grid-cols-2 gap-8">
                 
                 <h1 className="text-white text-4xl md:text-7xl font-medium tracking-wide mb-7 md:mb-12">
                   Travel Begins <br />
@@ -56,12 +55,12 @@ export default function Home() {
       </section>
 
       {/*Services*/}
-      <section className="w-full md:content-center pb-20 md:pb-0 md:h-[100vh]"> 
-        <div className="max-w-4/6 mx-auto px-3 md:px-10">
+      <section className="w-full md:content-center pb-20 md:pb-0 sm:h-[120vh] md:h-[100vh]"> 
+        <div className="max-w-4/6 mx-auto px-3 md:px-16">
 
-          <div className="flex items-stretch flex-col md:flex-row justify-between gap-10 mb-16">
+          <div className="flex items-stretch flex-col md:flex-row justify-between gap-10 mb-12">
             
-            <div className="text-2xl md:text-5xl font-bold w-full md:w-3/6 text-black text-center md:text-left">
+            <div className="text-xl md:text-5xl font-bold w-full md:w-3/6 text-black text-center md:text-left">
               Your Trusted Partner
               <div className="h-1 md:h-5 bg-transparent"/>
               For Local & Global
@@ -87,10 +86,10 @@ export default function Home() {
                   alt="Airplane"
                 />
               </span>
-              <h3 className="font-semibold text-center md:text-left text-xl md:text-2xl mb-4 mt-3 text-black">
+              <h3 className="font-semibold text-center md:text-left text-lg md:text-2xl mb-2 mt-1 md:mb-4 md:mt-3 text-black">
                 Flights & Transfers
               </h3>
-              <p className="text-[#909090] text-center md:text-left font-medium text-lg md:text-xl leading-relaxed">
+              <p className="text-[#909090] text-center md:text-left font-medium text-base md:text-xl leading-relaxed">
                 Convenient routes and competitive fares for smooth travel.
               </p>
             </div>
@@ -104,10 +103,10 @@ export default function Home() {
                   alt="Hotel"
                 />
               </span>
-              <h3 className="font-semibold text-center md:text-left text-xl md:text-2xl mb-4 mt-3 text-black">
+              <h3 className="font-semibold text-center md:text-left text-lg md:text-2xl mb-2 mt-1 md:mb-4 text-black">
                 Accommodation Planning
               </h3>
-              <p className="text-[#909090] text-center md:text-left font-medium text-xl leading-relaxed">
+              <p className="text-[#909090] text-center md:text-left font-medium  md:text-xl text-base leading-relaxed">
                 Comfortable hotels with quality service in prime locations.
               </p>
             </div>
@@ -121,10 +120,10 @@ export default function Home() {
                   alt="Suitcase"
                 />
               </span>
-              <h3 className="font-semibold text-center md:text-left text-xl md:text-2xl mb-4 mt-3 text-black">
+              <h3 className="font-semibold text-center md:text-left text-lg md:text-2xl mb-2 mt-1 md:mb-4 text-black">
                 Tour Packages
               </h3>
-              <p className="text-[#909090] text-center md:text-left font-medium text-xl leading-relaxed">
+              <p className="text-[#909090] text-center md:text-left font-medium text-base md:text-xl leading-relaxed">
                 Customized local and international tours for your style.
               </p>
             </div>
@@ -138,10 +137,10 @@ export default function Home() {
                   alt="Passport"
                 />
               </span>
-              <h3 className="font-semibold text-center md:text-left text-xl md:text-2xl mb-4 mt-3 text-black">
+              <h3 className="font-semibold text-center md:text-left text-lg md:text-2xl mb-2 mt-1 md:mb-4 text-black">
                 Visa Assistance
               </h3>
-              <p className="text-[#909090] text-center md:text-left font-medium text-xl leading-relaxed">
+              <p className="text-[#909090] text-center md:text-left font-medium md:text-xl text-base leading-relaxed">
                 Reliable visa guidance for stress-free international travel.
               </p>
             </div>
@@ -160,17 +159,17 @@ export default function Home() {
 
       {/* Comments */}
       <section className="w-full bg-white pt-10 pb-10 md:pb-0 md:h-[100%]">
-        <div className="max-w-4/6 mx-auto px-3 md:px-10 text-center">
+        <div className="max-w-4/6 mx-auto px-3 md:px-16 text-center">
           <h2 className="text-2xl md:text-5xl font-semibold text-gray-900">
             Stories From Our Travelers
           </h2>
-          <p className="mt-3 text-base text-gray-500 md:text-base">
+          <p className="mt-3 text-base text-gray-500 md:text-xl">
             Hear from travelers who have trusted us to plan their local and
             international journeys.
           </p>
         </div>
 
-        <div className="relative mt-12 max-w-5/6 pb-10 px-3 md:px-10 mx-auto">
+        <div className="relative mt-12 max-w-5/6 pb-10 px-3 md:px-16 mx-auto">
           <div className="relative h-[40rem] w-full overflow-hidden md:rounded-lg rounded-lg">
             <Image
               src="/home-cover.webp"

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="mt-32 bg-white mx-auto w-full max-w-4/6 min-h-fit md:h-[100vh] px-3 md:px-10">
+    <section className="mt-32 bg-white mx-auto w-full max-w-4/6 min-h-fit md:h-[100vh] px-3 md:px-16">
 
       <div className="flex flex-col lg:flex-row items-start justify-between gap-6 mb-8">
         <h1 className="font-bold text-gray-900 leading-none text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Malaysia</h1>

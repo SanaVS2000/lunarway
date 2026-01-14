@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="mt-32 bg-white mx-auto w-full max-w-4/6 min-h-fit lg:h-[90vh] px-3 md:px-10">
+    <section className="mt-32 bg-white mx-auto w-full max-w-4/6 min-h-fit lg:h-[90vh] px-3 md:px-16">
 
       {/* FULL WIDTH TITLE + DESCRIPTION ROW */}
       <div className="flex flex-col lg:flex-row items-start justify-between gap-6 mb-8">
@@ -14,7 +14,7 @@ export default function HeroSection() {
       </div>
 
       {/* IMAGES GRID */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-12 items-start">
 
         {/* LEFT IMAGE */}
         <div className="rounded-xl overflow-hidden">

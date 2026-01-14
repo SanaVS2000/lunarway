@@ -4,7 +4,7 @@ import { MapPinned,Banknote,SquarePen,Handshake } from "lucide-react";
 function JourneySection() {
   return (
     <section className="py-24 md:content-center">
-    <div className="max-w-4/6 mx-auto px-3 md:px-10 ">
+    <div className="max-w-4/6 mx-auto px-3 md:px-16 ">
 
         {/* Top Row */}
         <div className="md:gap-20 gap-10 flex items-stretch flex-col md:flex-row justify-between">
@@ -53,13 +53,13 @@ function JourneySection() {
         
 
         {/* Bottom Content */}
-        <div className="mt-20 grid lg:grid-cols-2 gap-16">
+        <div className="mt-20 grid lg:grid-cols-2 gap-10 md:gap-20">
 
-          <h3 className="text-3xl md:text-4xl text-black font-semibold leading-tight text-center md:text-left">
+          <h3 className="text-xl md:text-5xl text-black font-semibold leading-tight text-center md:text-left">
             Where Every <br /> Journey Begins
           </h3>
 
-          <div className="text-gray-500 space-y-6 max-w-xl text-center md:text-left">
+          <div className="text-gray-500 text-sm md:text-base space-y-6 max-w-xl text-center md:text-left">
             <p>
               We are a travel-focused team dedicated to planning smooth and
               well-organized journeys. Our aim is to simplify travel by handling
@@ -84,10 +84,10 @@ function JourneySection() {
               width={30}
               height={30}
               alt="Map"
-              className="mx-auto"
+              className="md:mx-0 mx-auto"
             />
-            <h4 className="font-semibold text-black">Carefully Planned Itineraries</h4>
-            <p className="text-sm text-gray-500">
+            <h4 className="text-lg text-center md:text-left font-semibold text-black">Carefully Planned Itineraries</h4>
+            <p className="text-base text-center md:text-left text-gray-500">
               Well-structured journeys designed for comfort and smooth travel.
             </p>
           </div>
@@ -98,10 +98,10 @@ function JourneySection() {
               width={30}
               height={30}
               alt="Cash"
-              className="mx-auto"
+              className="md:mx-0 mx-auto"
             />
-            <h4 className="font-semibold text-black">Transparent Pricing</h4>
-            <p className="text-sm text-gray-500">
+            <h4 className="text-lg text-center md:text-left font-semibold text-black">Transparent Pricing</h4>
+            <p className="text-base text-center md:text-left text-gray-500">
               Clear pricing with no hidden costs or surprises.
             </p>
           </div>
@@ -112,10 +112,10 @@ function JourneySection() {
               width={30}
               height={30}
               alt="Art"
-              className="mx-auto"
+              className="md:mx-0 mx-auto"
             />
-            <h4 className="font-semibold text-black">Flexible Travel Options</h4>
-            <p className="text-sm text-gray-500">
+            <h4 className="text-lg text-center md:text-left font-semibold text-black">Flexible Travel Options</h4>
+            <p className="text-base text-center md:text-left text-gray-500">
               Adjust travel dates, hotels, and experiences to suit your needs.
             </p>
           </div>
@@ -126,10 +126,10 @@ function JourneySection() {
               width={30}
               height={30}
               alt="Handshake"
-              className="mx-auto"
+              className="md:mx-0 mx-auto"
             />
-            <h4 className="font-semibold text-black">Dedicated Travel Support</h4>
-            <p className="text-sm text-gray-500">
+            <h4 className="text-lg text-center md:text-left font-semibold text-black">Dedicated Travel Support</h4>
+            <p className="text-base text-center md:text-left text-gray-500">
               Reliable assistance before and throughout your journey.
             </p>
           </div>

@@ -9,7 +9,7 @@ export default function Destinations() {
       title: 'Malaysia',
       description:
         'Modern cities and rich culture. Landmarks, shopping, and scenic attractions. Great for varied travel experiences.',
-      images: ['/destination-img1.png', '/malaysia2.webp'],
+      images: ['/destination-img1.webp', '/malaysia2.webp'],
       url: '/malaysia',
     },
     {
@@ -49,7 +49,7 @@ export default function Destinations() {
   };
 
   return (
-    <section className="w-full bg-[#F8F8F6] md:h-[100vh] px-4 md:px-10 flex items-center">
+    <section className="w-full bg-[#F8F8F6] md:h-[100vh] px-4 md:px-16 py-10 flex items-center">
       <div className="mx-auto w-full overflow-hidden">
 
         {/* SLIDER */}
@@ -61,21 +61,21 @@ export default function Destinations() {
           {slides.map((slide, idx) => (
             <div
               key={idx}
-              className="min-w-full snap-center grid grid-cols-1 md:grid-cols-[520px_490px_420px] gap-10 md:gap-0 items-start"
+              className="min-w-full snap-center grid grid-cols-1 md:grid-cols-[5.2fr_4.9fr_4.2fr] gap-10 md:gap-0 items-start"
             >
               {/* LEFT TEXT */}
               <div className="space-y-4 md:space-y-6 text-center md:text-left">
-                <h2 className="text-3xl md:text-5xl font-bold text-black leading-snug">
+                <h2 className="text-xl md:text-5xl font-bold text-black leading-snug">
                   Places We <br /> Take You <br /> Worldwide
                 </h2>
-                <p className="text-gray-500 text-base md:text-xl md:w-5/6 mx-auto md:mx-0">
+                <p className="text-gray-500 text-sm md:text-xl md:w-5/6 mx-auto md:mx-0">
                   Discover destinations chosen for their experiences, culture, and unforgettable moments, both close to home and across the world.
                 </p>
               </div>
 
               {/* CENTER IMAGE */}
               <div className="flex justify-center">
-                <div className="h-[500px] w-[400px] md:h-[520px] md:w-[420px] rounded-lg overflow-hidden shadow-md relative">
+                <div className="h-[400px] w-full px-10 md:px-0 md:h-[520px] md:w-[420px] rounded-lg overflow-hidden shadow-md relative">
                   <Image
                     src={slide.images[0]}
                     alt={slide.title}
@@ -98,7 +98,7 @@ export default function Destinations() {
                   </p>
                 </div>
 
-                <div className="w-[200px] md:w-[250px] rounded-xl overflow-hidden shadow-md pt-4">
+                <div className="w-[200px] md:w-[230px] rounded-xl overflow-hidden shadow-md pt-4">
                   <img
                     src={slide.images[1]}
                     alt={`${slide.title} small`}

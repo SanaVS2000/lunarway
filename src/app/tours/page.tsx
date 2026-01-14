@@ -24,7 +24,7 @@ interface TourCardProps {
 const TourCard: React.FC<TourCardProps> = ({ tour }) => {
   return (
     <div className="group relative overflow-hidden rounded-2xl bg-white shadow-lg ">
-      <div className="relative h-[27rem] overflow-hidden">
+      <div className="relative h-[25rem] md:h-[27rem] overflow-hidden">
         <img
           src={tour.image}
           alt={tour.imageAlt}
@@ -111,15 +111,15 @@ const tourPackages: TourPackage[] = [
 
 const TourPackages: React.FC = () => {
   return (
-    <section className=" w-full max-w-4/6 mx-auto px-3 md:px-10 py-20 md:h-[100vh]">
+    <section className=" w-full max-w-4/6 mx-auto px-3 md:px-16 py-20 md:h-[100vh]">
       <div className="flex flex-col">
-        <div className="mb-3">
-          <h1 className="text-2xl md:text-4xl font-bold text-black md:leading-[1.2] text-center mx-auto">
+        <div className="mb-3 w-2/3 mx-auto"> 
+          <h1 className="text-xl md:text-4xl font-bold text-black md:leading-[1.2] text-center mx-auto">
             Explore Our Most Popular Tour Packages
           </h1>
         </div>
 
-          <span className="text-[#909090] text-lg md:text-xl text-center mx-auto">
+          <span className="text-[#909090] text-sm md:text-xl text-center w-2/3 mx-auto">
             Discover a range of tour packages designed for comfort, ease, and memorable travel.
           </span>
       </div>
@@ -144,7 +144,7 @@ export default function Tours(){
 
       {/* Cover image */}
       <section className="mt-24">
-        <div className="mx-auto relative w-full max-w-4/6 h-auto px-3 md:px-10">
+        <div className="mx-auto relative w-full max-w-4/6 h-auto px-3 md:px-16">
 
           {/* Text row */}
           <div className="grid md:grid-cols-2 gap-10 items-end">
